@@ -189,11 +189,12 @@ export default {
         },
         onCancel:function(){
             this.$message({
-            message: '放弃添加',
+            message: '放弃修改',
             type: 'warning'
             });
             // location.reload()
-            this.getParams();
+            // this.getParams();
+            this.$router.push({path:'/admin/medialist'})
         },
     },
     created:function() {

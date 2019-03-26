@@ -15,7 +15,7 @@ Vue.prototype.userApi = userApi;
 // 注册axios为全局属性
 import axios from 'axios'
 // axios 配置
-axios.defaults.timeout = 5000;
+axios.defaults.timeout = 50000;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
 // axios.defaults.headers.post['Authorization'] = 'bearer ' + Vue.prototype.cookieApi.getTokenCookie();
 // 用于解决跨域问题，配置在config下的index.js

@@ -171,7 +171,7 @@
         }).catch(() => {
           this.$message({
             type: 'info',
-            message: '已取消删除'
+            message: '放弃删除'
           });          
         });
       }

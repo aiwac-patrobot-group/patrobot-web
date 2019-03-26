@@ -49,7 +49,7 @@ export default new Router({
           children:[
             {path: '/admin/mediaupload', component: UploadMedia, name: '音视频上传', meta:{ isLogin:true, auth: 'admin'}},
             {path: '/admin/medialist', component: MediaList, name: '音视频列表展示', meta:{ isLogin:true, auth: 'admin'}},
-            {path: '/admin/mediaupdate', component: MediaUpdate, name: '音视频更新', meta:{ isLogin:true, auth: 'admin'}},
+            {path: '/admin/mediaupdate', component: MediaUpdate, name: '音视频更新', meta:{ isLogin:true, auth: 'admin'},hidden:true},
             ]
     },
   ]

@@ -28,9 +28,9 @@
     <el-col :span="24" class="main">
       <aside :class="collapsed?'menu-collapsed':'menu-expanded'">
         <!--导航菜单-->
-        <!--使用style="width: 230px" 解决折叠后显示异常的bug-->
+        <!--使用style="width: 240px" 解决折叠后显示异常的bug-->
         <el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleopen" @close="handleclose" @select="handleselect"
-                 unique-opened router v-show="!collapsed" style="width: 230px">
+                 unique-opened router v-show="!collapsed" style="width: 240px">
           <!--item.meta.auth==='admin' 显示响应账号权限页面-->
           <template v-for="(item,index) in $router.options.routes" v-if="!item.hidden && item.meta.auth===authType">
             <el-submenu :index="index+''" v-if="!item.leaf">
@@ -86,7 +86,7 @@
   export default {
     data() {
       return {
-        sysName:'医疗服务平台',
+        sysName:'宠物机器人管理平台',
         // 控制侧面板折叠
         collapsed:false,
         sysUserName: '',
@@ -200,7 +200,7 @@
         }
       }
       .logo {
-        //width:230px;
+        //width:240px;
         height:60px;
         font-size: 22px;
         padding-left:20px;
@@ -218,7 +218,7 @@
         }
       }
       .logo-width{
-        width:230px;
+        width:240px;
       }
       .logo-collapse-width{
         width:60px
@@ -239,8 +239,8 @@
       bottom: 0px;
       overflow: hidden;
       aside {
-        flex:0 0 230px;
-        width: 230px;
+        flex:0 0 240px;
+        width: 240px;
         // position: absolute;
         // top: 0px;
         // bottom: 0px;
@@ -268,8 +268,8 @@
         width: 60px;
       }
       .menu-expanded{
-        flex:0 0 230px;
-        width: 230px;
+        flex:0 0 240px;
+        width: 240px;
       }
       .content-container {
         // background: #f1f2f7;
@@ -278,7 +278,7 @@
         // right: 0px;
         // top: 0px;
         // bottom: 0px;
-        // left: 230px;
+        // left: 240px;
         overflow-y: scroll;
         padding: 20px;
         .breadcrumb-container {
